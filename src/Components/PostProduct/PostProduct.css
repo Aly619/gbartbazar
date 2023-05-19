@@ -1,0 +1,114 @@
+.post-details {
+    padding: 0px 130px;
+    padding-top: 30px;
+    background-color: #0B1334;
+    display: flex;
+    gap: 30px;
+    /* align-self: center; */
+
+}
+
+.post-heading {
+    width: 475px;
+    height: 68px;
+    font-family: 'Cabin';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 140%;
+    color: #FFFFFF;
+}
+
+.product-img {
+    width: 500px;
+    height: 318px;
+}
+
+.right-post {
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+}
+
+.profile-link1 {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    /* margin-left: 20px; */
+}
+
+.post-proimg {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.users-name {
+    margin-right: 10px;
+    font-family: 'Cabin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 145.8%;
+    color: #697694;
+}
+
+.users-date {
+    margin-left: 10px;
+    font-family: 'Cabin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 145.8%;
+    color: #697694;
+}
+
+.post-heading2 {
+    margin-top: 30px;
+    font-family: 'Cabin';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 140%;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.post-para {
+    margin-top: 10px;
+    font-family: 'Urbanist';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.post-contact-links {
+    margin-top: 30px;
+    margin-bottom: 88px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.post-contact-links p {
+    margin-left: 23px;
+    font-family: 'Urbanist';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.post-number {
+    display: flex;
+}
+
+.post-mail {
+    display: flex;
+}
+
+.post-address {
+    display: flex;
+}

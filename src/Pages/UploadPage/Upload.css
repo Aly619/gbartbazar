@@ -1,0 +1,67 @@
+.upload {
+    padding: 0px 140px;
+    background-color: #0B1334;
+    display: flex;
+
+}
+
+.upload-content {
+    padding-left: 190px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.upload-content-title {
+    width: 697px;
+    height: 62px;
+    font-family: 'Urbanist';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 53px;
+    line-height: 62px;
+    text-align: center;
+    text-transform: capitalize;
+    background: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.2);
+
+}
+
+.upload-content-image-section {
+    width: 700px;
+    height: 470px;
+
+
+}
+
+.upload-label {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    font-family: 'Urbanist';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.upload-content textarea {
+    width: 609px;
+    height: 40px;
+    font-family: 'Urbanist';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    background: transparent;
+    border: none;
+    letter-spacing: 0.03em;
+    outline: none;
+
+    color: rgba(255, 255, 255, 0.7);
+}

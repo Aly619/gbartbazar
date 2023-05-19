@@ -1,0 +1,66 @@
+.landing-card {
+    background-color: #171F3E;
+    width: 367px;
+    height: 459px;
+    display: flex;
+    flex-direction: column;
+}
+
+.landing-card-img {
+    width: 367px;
+}
+
+.landing-header {
+    width: 327px;
+    background-color: #171F3E;
+    margin-left: 20px;
+    margin-top: 27px;
+    font-family: 'Cabin';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 140%;
+    color: #FFFFFF;
+}
+
+.profile-link {
+    display: flex;
+    align-items: center;
+    margin-top: 17px;
+    margin-left: 20px;
+    background-color: #171F3E;
+
+}
+.usergap{
+    background-color: #FFFFFF;
+    height: 10px;
+    width: 1px;
+}
+
+.landing-card-proimg {
+    width: 30px;
+    margin-right: 10px;
+    background-color: #171F3E;
+}
+
+.user-name {
+    background-color: #171F3E;
+    margin-right: 10px;
+    font-family: 'Cabin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 145.8%;
+    color: #697694;
+}
+
+.user-date {
+    background-color: #171F3E;
+    margin-left: 10px;
+    font-family: 'Cabin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 145.8%;
+    color: #697694;
+}
