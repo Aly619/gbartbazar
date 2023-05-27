@@ -9,25 +9,42 @@ import ProfileDetail from './Pages/ProfileDetails/ProfileDetail';
 import LandingPage from './Pages/LandingPage/LandingPage'
 import Upload from './Pages/UploadPage/Upload'
 import SignInDetails from './Pages/SignInDetails/SignInDetails'
+import ForgetPassword from './Pages/ForgetPasswordPage/ForgetPassword';
+import Verification from './Pages/PasswordVerificationPage/Verification';
+import NewPassword from './Pages/NewPasswordPage/NewPassword';
+import EmailCode from './Pages/EmailCodeConfirmationPage/EmailCode';
+import EmailVerfication from './Pages/EmailVerificationPage/EmailVerfication';
+import ContinuePost from './Pages/ContinuePostPage/ContinuePost';
 
 
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { useState } from 'react';
+
+
 
 
 function App() {
+
+  const [isLoggedIn, setIsloggedIn] = useState(false)
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<Home />} />
+        <Route path='/' element={<Home isLoggedIn={isLoggedIn}/>} />
         <Route path='/landingpage' element={<LandingPage />} />
         <Route path='/post' element={<Post/>} />
         <Route path='/profile' element={<Profile/>} />
         <Route path='/profiledetails' element={<ProfileDetail/>} />
         <Route path='/upload' element={<Upload/>} />
-        <Route path='/signup' element={<SignIn/>}/>
-        <Route path='/login' element={<SignUp/>}/>
+        <Route path='/signup' element={<SignIn isLoggedIn={isLoggedIn} setIsloggedIn={setIsloggedIn}/>}/>
+        <Route path='/login' element={<SignUp isLoggedIn={isLoggedIn} setIsloggedIn={setIsloggedIn}/>}/>
+        <Route path='/forgetpassword' element={<ForgetPassword/>}/>
+        <Route path='/verification' element={<Verification/>}/>
+        <Route path='/newpassword' element={<NewPassword/>}/>
         <Route path='/signindetails' element={<SignInDetails/>}/>
+        <Route path='/emailcode' element={<EmailCode/>}/>
+        <Route path='/emailverification' element={<EmailVerfication/>}/>
+        <Route path='/continuepost' element={<ContinuePost/>}/>
       </Routes>
     </BrowserRouter>
   );

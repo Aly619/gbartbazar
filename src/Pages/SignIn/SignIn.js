@@ -5,9 +5,15 @@ import usericon from '../../Images/user.png'
 import usernameicon from '../../Images/username.png'
 import emailicon from '../../Images/sms.png'
 import passwordicon from '../../Images/lock.png'
+import { useNavigate } from 'react-router-dom'
 
 
 const SignIn = () => {
+
+    const navigate = useNavigate()
+    const handleSignUp = ()=>{
+        navigate('/login')
+    }
     return (
         <>
             <div className="max-width-1440">
@@ -51,7 +57,7 @@ const SignIn = () => {
 
                         </div>
 
-                        <button className='submit-btn' type='submit'>Create Account</button>
+                        <button className='submit-btn' type='submit' onClick={handleSignUp}>Create Account</button>
 
                     </section>
 

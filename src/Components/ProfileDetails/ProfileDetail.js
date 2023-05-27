@@ -10,6 +10,7 @@ import c4 from '../../Components/LandingCard/c4.png'
 import c5 from '../../Components/LandingCard/c5.png'
 import c6 from '../../Components/LandingCard/c6.png'
 import propic from '../../Components/LandingCard/propic.png'
+import { Link } from 'react-router-dom'
 
 
 
@@ -41,7 +42,9 @@ const ProfileDetail = ({ proheroimg, profilepicture, profiledetailsheading, prof
             <div className="pro-right-top">
               <button className="my-art-btn">My art work</button>
               <p className='pro-right-top-about'>About</p>
-              <p className='pro-right-top-share'>Share your art work</p>
+
+              <Link to={'/upload'}><p className='pro-right-top-share'>Share your art work</p></Link>
+              
             </div>
             <div className="pro-right-bottom">
               <LandingCard landingimg={c1} landingheader="How to create marketing personas that start with empathy" profilepic={propic} username="John Birmingham" userdate="25 December 2019" />

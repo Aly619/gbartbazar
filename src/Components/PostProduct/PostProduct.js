@@ -5,15 +5,17 @@ import pmail from '../../Pages/PostPage/sms.png'
 import paddress from '../../Pages/PostPage/location.png'
 
 
-const PostProduct = ({productimg,profilepic,username,userdate}) => {
+const PostProduct = ({ productimg, profilepic, username, userdate }) => {
     return (
         <>
             <section className="post-details max-width-1440">
 
                 <div className="left-post">
-
-              <img className='product-img' src={productimg} alt="" />
-
+                    <img className='product-img' src={productimg} alt="" />
+                    <div className="left-post-btn">
+                        <button className='edit-post-btn'>Edit your post </button>
+                        <button className='dlt-post-btn'>Delete your post </button>
+                    </div>
                 </div>
                 <div className="right-post">
                     <h1 className="post-heading">How to create marketing personas that start with empathy</h1>
@@ -32,16 +34,19 @@ const PostProduct = ({productimg,profilepic,username,userdate}) => {
 
                         </div>
                         <div className="post-mail">
-                        <img src={pmail} alt="" />
+                            <img src={pmail} alt="" />
                             <p>Mailing Address: javediq999@gamail.com</p>
 
                         </div>
                         <div className="post-address">
-                        <img src={paddress} alt="" />
+                            <img src={paddress} alt="" />
                             <p>Addrss: Ideometrix ltd pakistan gilgit</p>
 
                         </div>
 
+                    </div>
+                    <div className="reviews">
+                        
                     </div>
 
                 </div>

@@ -5,8 +5,15 @@ import signin from '../../Images/Signupimg.png'
 import usernameicon from '../../Images/username.png'
 import passwordicon from '../../Images/lock.png'
 
+import { useNavigate } from 'react-router-dom'
+const SignUp = ({isLoggedIn,setIsloggedIn}) => {
 
-const SignUp = () => {
+    const navigate = useNavigate()
+    const handleSignUp = ()=>{
+        console.log('Form Submitted')
+        setIsloggedIn(true)
+        navigate('/')
+    }
     return (
         <>
             <div className="max-width-1440">
@@ -37,7 +44,7 @@ const SignUp = () => {
 
                         <p className="forget-password">forget Password?</p>
 
-                        <button className='signin-btn' type='submit'>Sign In</button>
+                        <button className='signin-btn' type='submit' onClick={handleSignUp}>Sign In</button>
 
                     </section>
 

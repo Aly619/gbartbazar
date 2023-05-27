@@ -19,6 +19,49 @@
     color: #FFFFFF;
 }
 
+.left-post {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.left-post-btn {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+
+.edit-post-btn {
+    width: 173px;
+    height: 47px;
+    background: #3166E9;
+    border-radius: 10px;
+    font-family: 'Urbanist';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.dlt-post-btn {
+    width: 173px;
+    height: 47px;
+    border: 1px solid #2D7DD7;
+    border-radius: 10px;
+    background: transparent;
+    font-family: 'Urbanist';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
 .product-img {
     width: 500px;
     height: 318px;

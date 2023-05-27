@@ -19,9 +19,9 @@ import { useState } from 'react'
 import Footer from '../../Components/Footer/Footer'
 
 
-const Home = () => {
+const Home = ({isLoggedIn}) => {
 
-    const [isLoggedIn, setIsloggedIn] = useState(true)
+   
     return (
         <>
             <Navbar isLoggedIn={isLoggedIn} />
@@ -84,7 +84,7 @@ const Home = () => {
 
                     <section className="community-cards">
 
-                        <LandingCard landingimg={c1} landingheader="How to create marketing personas that start with empathy" profilepic={propic} username="John Birmingham" userdate="25 December 2019" />
+                        <LandingCard landingimg={c1} landingheader="How to create desigining personas that start with empathy" profilepic={propic} username="John Birmingham" userdate="25 December 2019" />
 
                         <LandingCard landingimg={c2} landingheader="How to create marketing personas that start with empathy" profilepic={propic} username="John Birmingham" userdate="25 December 2019" />
 

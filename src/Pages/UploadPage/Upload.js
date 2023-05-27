@@ -6,19 +6,20 @@ import backbtn from '../UploadPage/back.png'
 import uploadimg from '../UploadPage/uploadimg.png'
 import { useState } from 'react'
 
-
+import { useNavigate } from 'react-router-dom'
 import { isDisabled } from '@testing-library/user-event/dist/utils'
 
 
 
 const Upload = () => {
   const [isLoggedIn, setIsloggedIn] = useState(true)
+  const navigate = useNavigate()
   return (
     <>
      <Navbar isLoggedIn={isLoggedIn}/>
      <section className="upload max-width-1440">
         <div className="back-btn">
-            <img src={backbtn} alt="" />
+            <img onClick={()=> navigate(-1)} src={backbtn} alt="" />
             
         </div>
         <div className="upload-content">
