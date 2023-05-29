@@ -1,0 +1,45 @@
+.review-card {
+    width: 329px;
+    height: 118px;
+    display: flex;
+    flex-direction: column;
+    background: #232B48;
+    border-radius: 10px;
+}
+
+.review-card-up {
+    display: flex;
+    padding-top: 12px;
+    padding-bottom: 16px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.review-card-up p {
+    width: 260px;
+    font-family: 'Cabin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 130%;
+    color: rgba(255, 255, 255, 0.5);
+
+}
+
+.review-card-up img {
+    width: 28px;
+    height: 28px;
+    margin-left: 17px;
+    
+}
+.review-card-stars{
+    margin-left: 12px;
+}
+.review-card-stars input{
+    
+    display: none;
+}
+
+.fastar{
+    color: goldenrod;
+}

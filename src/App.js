@@ -16,6 +16,9 @@ import EmailCode from './Pages/EmailCodeConfirmationPage/EmailCode';
 import EmailVerfication from './Pages/EmailVerificationPage/EmailVerfication';
 import ContinuePost from './Pages/ContinuePostPage/ContinuePost';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+
 
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom'

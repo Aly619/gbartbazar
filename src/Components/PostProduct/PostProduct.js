@@ -4,6 +4,10 @@ import pcall from '../../Pages/PostPage/call.png'
 import pmail from '../../Pages/PostPage/sms.png'
 import paddress from '../../Pages/PostPage/location.png'
 
+import Review from '../../Components/Reviews/Review'
+
+import profileimage from '../../Components/PostProduct/profileimage.png'
+
 
 const PostProduct = ({ productimg, profilepic, username, userdate }) => {
     return (
@@ -46,10 +50,18 @@ const PostProduct = ({ productimg, profilepic, username, userdate }) => {
 
                     </div>
                     <div className="reviews">
-                        
+                    <div className="review-cards">
+                        <Review reviewpara="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vehicula arcu nec libero porttitor tincidunt. Nullam massa lorem, tincidunt a placerat quis, semper at ex. Donec id molestie lacus." reviewimg={profileimage} />
+                        <Review reviewpara="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vehicula arcu nec libero porttitor tincidunt. Nullam massa lorem, tincidunt a placerat quis, semper at ex. Donec id molestie lacus." reviewimg={profileimage} />
+                        <Review reviewpara="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vehicula arcu nec libero porttitor tincidunt. Nullam massa lorem, tincidunt a placerat quis, semper at ex. Donec id molestie lacus." reviewimg={profileimage} />
+                        <Review reviewpara="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vehicula arcu nec libero porttitor tincidunt. Nullam massa lorem, tincidunt a placerat quis, semper at ex. Donec id molestie lacus." reviewimg={profileimage} />
                     </div>
 
                 </div>
+
+
+                </div>
+                
             </section>
 
 

@@ -4,7 +4,7 @@
     background-color: #0B1334;
     display: flex;
     gap: 30px;
-    /* align-self: center; */
+   
 
 }
 
@@ -69,15 +69,14 @@
 
 .right-post {
     display: flex;
-    /* align-items: center; */
     flex-direction: column;
+  
 }
 
 .profile-link1 {
     display: flex;
     align-items: center;
     margin-top: 20px;
-    /* margin-left: 20px; */
 }
 
 .post-proimg {
@@ -116,19 +115,20 @@
 }
 
 .post-para {
+    width: 609px;
     margin-top: 10px;
     font-family: 'Urbanist';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 25px;
+    font-size: 14px;
+    line-height: 23px;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.7);
 }
 
 .post-contact-links {
     margin-top: 30px;
-    margin-bottom: 88px;
+    margin-bottom: 36px;
     gap: 20px;
     display: flex;
     flex-direction: column;
@@ -154,4 +154,15 @@
 
 .post-address {
     display: flex;
+}
+.reviews{
+    width: 770px;
+    margin-bottom: 28px; 
+}
+.review-cards{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+
 }
