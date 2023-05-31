@@ -72,11 +72,15 @@
     flex-direction: column;
   
 }
+.right-post .review-card-stars{
+    margin-top: 8px;
+    margin-left: 12px;
+}
 
 .profile-link1 {
     display: flex;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 12px;
 }
 
 .post-proimg {

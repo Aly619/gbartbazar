@@ -12,10 +12,12 @@ const Navbar = ({ isLoggedIn }) => {
         <>
             <section className="navbar max-width-1440">
 
+                <Link to={'/'}>
+                    <div className="left-navbar">
+                        <h1 className="logo"><span className='primary-blue-color'> GB</span> Bazaar</h1>
+                    </div>
+                </Link>
 
-                <div className="left-navbar">
-                    <h1 className="logo"><span className='primary-blue-color'> GB</span> Bazaar</h1>
-                </div>
 
                 {
                     isLoggedIn ? (<div className="right-navbar">
@@ -27,15 +29,15 @@ const Navbar = ({ isLoggedIn }) => {
                         </div>
                         <img className='bell-icon' src={bellicon} alt="" />
                         <Link to='/profile'><img className='profile-icon' src={profileicon} alt="" /></Link>
-                        
+
 
                     </div>) : (
                         <>
                             <div className="header-right">
                                 <Link to={'/login'}> <button className="landing-signin-btn">Sign In</button></Link>
-                                <Link  to={'/signup'}> <button className="landing-register-btn">Register</button></Link>
-                               
-                                
+                                <Link to={'/signup'}> <button className="landing-register-btn">Register</button></Link>
+
+
                             </div>
                         </>
                     )

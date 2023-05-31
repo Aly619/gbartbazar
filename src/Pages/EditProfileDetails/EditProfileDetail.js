@@ -1,9 +1,9 @@
 import React from 'react'
-import '../ProfileDetails/ProfileDetail.css'
-import profileformimg from '../ProfileDetails/profileformimg.png'
+import './EditProfileDetail.css'
+import profileformimg from '../EditProfileDetails/profileformimg.png'
 
 
-const ProfileDetail = () => {
+const EditProfileDetail = () => {
     return (
         <>
             <section className="profile-form">
@@ -50,4 +50,4 @@ const ProfileDetail = () => {
     )
 }
 
-export default ProfileDetail
+export default EditProfileDetail

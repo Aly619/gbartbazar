@@ -34,7 +34,8 @@ const ProfileDetail = ({ proheroimg, profilepicture, profiledetailsheading, prof
                 <img src={location} alt="" />
                 <p>{profiledetailspara4}</p>
               </div>
-              <button className='profile-edit-btn'>Edit Your Profile</button>
+              <Link to={'/editprofiledetail'}><button className='profile-edit-btn'>Edit Your Profile</button></Link>
+              
             </div>
 
           </div>

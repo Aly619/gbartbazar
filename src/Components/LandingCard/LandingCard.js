@@ -37,7 +37,7 @@ const landingcard = ({ landingimg, landingheader, profilepic, username, userdate
         </div></Link>
 
         <Link to={'/post'}><div className="reviewbtn">
-          <button>Review</button>
+          {/* <button>Review</button> */}
         </div></Link>
        
 

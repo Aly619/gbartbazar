@@ -5,6 +5,8 @@ import pmail from '../../Pages/PostPage/sms.png'
 import paddress from '../../Pages/PostPage/location.png'
 
 import Review from '../../Components/Reviews/Review'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faStar } from '@fortawesome/free-solid-svg-icons'
 
 import profileimage from '../../Components/PostProduct/profileimage.png'
 
@@ -23,6 +25,18 @@ const PostProduct = ({ productimg, profilepic, username, userdate }) => {
                 </div>
                 <div className="right-post">
                     <h1 className="post-heading">How to create marketing personas that start with empathy</h1>
+                    <div className="review-card-stars">
+                        <input type="radio" name="rate" id="rate-5" />
+                        <FontAwesomeIcon for="rate-5" className='fastar' icon={faStar} />
+                        <input type="radio" name="rate" id="rate-4" />
+                        <FontAwesomeIcon for="rate-4" className='fastar' icon={faStar} />
+                        <input type="radio" name="rate" id="rate-3" />
+                        <FontAwesomeIcon for="rate-3" className='fastar' icon={faStar} />
+                        <input type="radio" name="rate" id="rate-2" />
+                        <FontAwesomeIcon for="rate-2" className='fastar' icon={faStar} />
+                        <input type="radio" name="rate" id="rate-1" />
+                        <FontAwesomeIcon for="rate-1" className='fastar' icon={faStar} />
+                    </div>
                     <div className="profile-link1">
                         <img className='post-proimg' src={profilepic} alt="" />
                         <p className="users-name">{username}</p>
@@ -50,18 +64,18 @@ const PostProduct = ({ productimg, profilepic, username, userdate }) => {
 
                     </div>
                     <div className="reviews">
-                    <div className="review-cards">
-                        <Review reviewpara="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vehicula arcu nec libero porttitor tincidunt. Nullam massa lorem, tincidunt a placerat quis, semper at ex. Donec id molestie lacus." reviewimg={profileimage} />
-                        <Review reviewpara="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vehicula arcu nec libero porttitor tincidunt. Nullam massa lorem, tincidunt a placerat quis, semper at ex. Donec id molestie lacus." reviewimg={profileimage} />
-                        <Review reviewpara="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vehicula arcu nec libero porttitor tincidunt. Nullam massa lorem, tincidunt a placerat quis, semper at ex. Donec id molestie lacus." reviewimg={profileimage} />
-                        <Review reviewpara="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vehicula arcu nec libero porttitor tincidunt. Nullam massa lorem, tincidunt a placerat quis, semper at ex. Donec id molestie lacus." reviewimg={profileimage} />
+                        <div className="review-cards">
+                            <Review reviewpara="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vehicula arcu nec libero porttitor tincidunt. Nullam massa lorem, tincidunt a placerat quis, semper at ex. Donec id molestie lacus." reviewimg={profileimage} />
+                            <Review reviewpara="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vehicula arcu nec libero porttitor tincidunt. Nullam massa lorem, tincidunt a placerat quis, semper at ex. Donec id molestie lacus." reviewimg={profileimage} />
+                            <Review reviewpara="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vehicula arcu nec libero porttitor tincidunt. Nullam massa lorem, tincidunt a placerat quis, semper at ex. Donec id molestie lacus." reviewimg={profileimage} />
+                            <Review reviewpara="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vehicula arcu nec libero porttitor tincidunt. Nullam massa lorem, tincidunt a placerat quis, semper at ex. Donec id molestie lacus." reviewimg={profileimage} />
+                        </div>
+
                     </div>
 
-                </div>
-
 
                 </div>
-                
+
             </section>
 
 

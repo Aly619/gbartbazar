@@ -5,7 +5,6 @@ import SignUp from './Pages/SignUp/SignUp'
 import Home from './Pages/Home/Home'
 import Post from './Pages/PostPage/Post'
 import Profile from './Pages/Profile/Profile'
-import ProfileDetail from './Pages/ProfileDetails/ProfileDetail';
 import LandingPage from './Pages/LandingPage/LandingPage'
 import Upload from './Pages/UploadPage/Upload'
 import SignInDetails from './Pages/SignInDetails/SignInDetails'
@@ -15,6 +14,7 @@ import NewPassword from './Pages/NewPasswordPage/NewPassword';
 import EmailCode from './Pages/EmailCodeConfirmationPage/EmailCode';
 import EmailVerfication from './Pages/EmailVerificationPage/EmailVerfication';
 import ContinuePost from './Pages/ContinuePostPage/ContinuePost';
+import EditProfileDetail from './Pages/EditProfileDetails/EditProfileDetail';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee } from '@fortawesome/free-solid-svg-icons'
@@ -37,7 +37,7 @@ function App() {
         <Route path='/landingpage' element={<LandingPage />} />
         <Route path='/post' element={<Post/>} />
         <Route path='/profile' element={<Profile/>} />
-        <Route path='/profiledetails' element={<ProfileDetail/>} />
+        <Route path='/editprofiledetail' element={<EditProfileDetail/>} />
         <Route path='/upload' element={<Upload/>} />
         <Route path='/signup' element={<SignIn isLoggedIn={isLoggedIn} setIsloggedIn={setIsloggedIn}/>}/>
         <Route path='/login' element={<SignUp isLoggedIn={isLoggedIn} setIsloggedIn={setIsloggedIn}/>}/>

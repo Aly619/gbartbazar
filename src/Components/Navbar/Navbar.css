@@ -15,7 +15,9 @@
     align-items: center;
     gap: 50px;
 }
-
+.left-navbar .logo{
+    color: #FFFFFF;
+}
 
 .navbar-search {
     
