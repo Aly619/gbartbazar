@@ -1,15 +1,16 @@
 import React from 'react'
 import '../SignIn/SignIn.css'
 import '../SignUp/SignUp.css'
+import { Link } from 'react-router-dom'
 import signin from '../../Images/Signupimg.png'
 import usernameicon from '../../Images/username.png'
 import passwordicon from '../../Images/lock.png'
 
 import { useNavigate } from 'react-router-dom'
-const SignUp = ({isLoggedIn,setIsloggedIn}) => {
+const SignUp = ({ isLoggedIn, setIsloggedIn }) => {
 
     const navigate = useNavigate()
-    const handleSignUp = ()=>{
+    const handleSignUp = () => {
         console.log('Form Submitted')
         setIsloggedIn(true)
         navigate('/')
@@ -42,7 +43,11 @@ const SignUp = ({isLoggedIn,setIsloggedIn}) => {
 
                         </div>
 
-                        <p className="forget-password">forget Password?</p>
+                        <Link to='/forgetpassword'>
+                        <p className="forget-password-btn">forget Password?</p>
+                        </Link>
+
+                        
 
                         <button className='signin-btn' type='submit' onClick={handleSignUp}>Sign In</button>
 
