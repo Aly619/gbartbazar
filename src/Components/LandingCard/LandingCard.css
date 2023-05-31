@@ -1,7 +1,7 @@
 .landing-card {
     background-color: #171F3E;
     width: 367px;
-    height: 459px;
+    /* height: 459px; */
     display: flex;
     flex-direction: column;
 }
@@ -10,11 +10,16 @@
     width: 367px;
 }
 
+.landing-card .review-card-stars {
+    margin-left: 20px;
+    margin-top: 35px;
+}
+
 .landing-header {
     width: 327px;
     background-color: #171F3E;
     margin-left: 20px;
-    margin-top: 27px;
+    margin-top: 5px;
     font-family: 'Cabin';
     font-style: normal;
     font-weight: 600;
@@ -26,12 +31,14 @@
 .profile-link {
     display: flex;
     align-items: center;
-    margin-top: 17px;
+    margin-top: 10px;
     margin-left: 20px;
+    margin-bottom: 11px;
     background-color: #171F3E;
 
 }
-.usergap{
+
+.usergap {
     background-color: #FFFFFF;
     height: 10px;
     width: 1px;
@@ -63,4 +70,25 @@
     font-size: 12px;
     line-height: 145.8%;
     color: #697694;
+}
+.reviewbtn{
+    display: flex;
+    justify-content: right;
+    margin-right: 12px;
+}
+
+.reviewbtn button{
+    width: 111px;
+    height: 28px;
+    margin-bottom: 8px;
+    background: #2D7DD7;
+    box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    font-family: 'Urbanist';
+    font-style: normal;
+    font-weight: 500;
+    text-align: center;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
 }
