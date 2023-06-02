@@ -1,7 +1,8 @@
 import React from 'react'
 import '../Reviews/Review.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faStar } from '@fortawesome/free-solid-svg-icons'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faStar } from '@fortawesome/free-solid-svg-icons'
+import ReactStars from 'react-stars'
 
 const Review = ({ reviewpara, reviewimg }) => {
   return (
@@ -17,7 +18,7 @@ const Review = ({ reviewpara, reviewimg }) => {
             
           </div>
           <div className="review-card-stars">
-            <input type="radio" name="rate" id="rate-5" />
+            {/* <input type="radio" name="rate" id="rate-5" />
             <FontAwesomeIcon for="rate-5" className='fastar' icon={faStar} />
             <input type="radio" name="rate" id="rate-4" />
             <FontAwesomeIcon for="rate-4" className='fastar' icon={faStar} />
@@ -26,7 +27,9 @@ const Review = ({ reviewpara, reviewimg }) => {
             <input type="radio" name="rate" id="rate-2" />
             <FontAwesomeIcon for="rate-2" className='fastar' icon={faStar} />
             <input type="radio" name="rate" id="rate-1" />
-            <FontAwesomeIcon for="rate-1" className='fastar' icon={faStar} />
+            <FontAwesomeIcon for="rate-1" className='fastar' icon={faStar} /> */}
+
+            <ReactStars count={5} size={24} color2={'#ffd700'} />
           </div>
         </div>
       </section>

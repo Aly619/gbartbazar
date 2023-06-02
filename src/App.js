@@ -16,8 +16,8 @@ import EmailVerfication from './Pages/EmailVerificationPage/EmailVerfication';
 import ContinuePost from './Pages/ContinuePostPage/ContinuePost';
 import EditProfileDetail from './Pages/EditProfileDetails/EditProfileDetail';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 
 
 

@@ -5,10 +5,11 @@ import pmail from '../../Pages/PostPage/sms.png'
 import paddress from '../../Pages/PostPage/location.png'
 
 import Review from '../../Components/Reviews/Review'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faStar } from '@fortawesome/free-solid-svg-icons'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faStar } from '@fortawesome/free-solid-svg-icons'
 
 import profileimage from '../../Components/PostProduct/profileimage.png'
+import ReactStars from 'react-stars'
 
 
 const PostProduct = ({ productimg, profilepic, username, userdate }) => {
@@ -26,7 +27,7 @@ const PostProduct = ({ productimg, profilepic, username, userdate }) => {
                 <div className="right-post">
                     <h1 className="post-heading">How to create marketing personas that start with empathy</h1>
                     <div className="review-card-stars">
-                        <input type="radio" name="rate" id="rate-5" />
+                        {/* <input type="radio" name="rate" id="rate-5" />
                         <FontAwesomeIcon for="rate-5" className='fastar' icon={faStar} />
                         <input type="radio" name="rate" id="rate-4" />
                         <FontAwesomeIcon for="rate-4" className='fastar' icon={faStar} />
@@ -35,7 +36,9 @@ const PostProduct = ({ productimg, profilepic, username, userdate }) => {
                         <input type="radio" name="rate" id="rate-2" />
                         <FontAwesomeIcon for="rate-2" className='fastar' icon={faStar} />
                         <input type="radio" name="rate" id="rate-1" />
-                        <FontAwesomeIcon for="rate-1" className='fastar' icon={faStar} />
+                        <FontAwesomeIcon for="rate-1" className='fastar' icon={faStar} /> */}
+
+                        <ReactStars count={5} size={24} color2='#ffd700' />
                     </div>
                     <div className="profile-link1">
                         <img className='post-proimg' src={profilepic} alt="" />
