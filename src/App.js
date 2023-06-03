@@ -48,6 +48,7 @@ function App() {
         <Route path='/emailcode' element={<EmailCode/>}/>
         <Route path='/emailverification' element={<EmailVerfication/>}/>
         <Route path='/continuepost' element={<ContinuePost/>}/>
+        <Route path='/upload' element={<Upload/>}/>
       </Routes>
     </BrowserRouter>
   );
