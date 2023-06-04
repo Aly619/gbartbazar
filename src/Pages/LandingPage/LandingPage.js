@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import '../LandingPage/LandingPage.css'
 import demo from '../LandingPage/demo.png'
 import heroimg from '../LandingPage/heroimg.png'
@@ -30,7 +31,8 @@ const LandingPage = () => {
                         <h1 className="logo"> <span className='primary-blue-color'> GB </span>Art Bazaar</h1>
                     </div>
                     <div className="header-right">
-                        <button className="landing-signin-btn">Sign in</button>
+                        <Link to='/login' ><button className="landing-signin-btn">Sign in</button></Link>
+                        <Link to='/signup'></Link>
                         <button className="landing-register-btn">Register</button>
                     </div>
                 </section>
@@ -45,7 +47,8 @@ const LandingPage = () => {
                         <p className="landing-hero-para">GB Art Bazaar is the leading destination to find & showcase creative work and home to the world's best design professionals.</p>
 
                         <div className="landing-hero-btn">
-                            <button className="get-btn">Get Started</button>
+                            <Link to='/signup'><button className="get-btn">Get Started</button></Link>
+                            
                             <img className='demo-btn' src={demo} alt="" />
                         </div>
 

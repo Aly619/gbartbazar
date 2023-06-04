@@ -33,7 +33,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<Home isLoggedIn={isLoggedIn}/>} />
+        <Route path='/' element={<Home isLoggedIn={isLoggedIn} setIsloggedIn={setIsloggedIn}/>} />
         <Route path='/landingpage' element={<LandingPage />} />
         <Route path='/post' element={<Post/>} />
         <Route path='/profile' element={<Profile/>} />

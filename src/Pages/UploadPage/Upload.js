@@ -34,7 +34,7 @@ const Upload = () => {
   };
   return (
     <>
-      <Navbar isLoggedIn={isLoggedIn} />
+      <Navbar isLoggedIn={isLoggedIn} setIsloggedIn={setIsloggedIn} />
       <section className="upload max-width-1440">
         <div className="back-btn">
           <img onClick={() => navigate(-1)} src={backbtn} alt="" />

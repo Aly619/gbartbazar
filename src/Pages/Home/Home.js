@@ -20,12 +20,12 @@ import { Link } from 'react-router-dom'
 import Footer from '../../Components/Footer/Footer'
 
 
-const Home = ({ isLoggedIn }) => {
+const Home = ({ isLoggedIn, setIsloggedIn }) => {
 
 
     return (
         <>
-            <Navbar isLoggedIn={isLoggedIn} />
+            <Navbar isLoggedIn={isLoggedIn} setIsloggedIn={setIsloggedIn} />
             <section className="home-section max-width-1440">
 
                 {/* -----------------------------------Hero-section--------------------------------- */}
@@ -38,7 +38,7 @@ const Home = ({ isLoggedIn }) => {
                         <p className="landing-hero-para">GB ArtBazaar is the leading destination to find & showcase creative work and home to the world's best design professionals.</p>
 
                         <div className="landing-hero-btn">
-                            <button className="get-btn">Get Started</button>
+                            <Link to={'/signup'}><button className="get-btn">Get Started</button></Link>                    
                             <img className='demo-btn' src={demo} alt="" />
                         </div>
 
