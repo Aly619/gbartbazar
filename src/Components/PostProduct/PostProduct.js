@@ -10,6 +10,7 @@ import Review from '../../Components/Reviews/Review'
 
 import profileimage from '../../Components/PostProduct/profileimage.png'
 import ReactStars from 'react-stars'
+import { Link } from 'react-router-dom'
 
 
 const PostProduct = ({ productimg, profilepic, username, userdate }) => {

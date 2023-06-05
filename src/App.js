@@ -37,8 +37,8 @@ function App() {
       <Routes>
         <Route path='/' element={<Home isLoggedIn={isLoggedIn} setIsloggedIn={setIsloggedIn}/>} />
         <Route path='/landingpage' element={<LandingPage />} />
-        <Route path='/post' element={<Post/>} />
         <Route path='/profile' element={<Profile/>} />
+        <Route path='/post' element={<Post/>} />
         <Route path='/editprofiledetail' element={<EditProfileDetail/>} />
         <Route path='/upload' element={<Upload/>} />
         <Route path='/signup' element={<SignIn isLoggedIn={isLoggedIn} setIsloggedIn={setIsloggedIn}/>}/>
