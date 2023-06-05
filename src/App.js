@@ -15,6 +15,7 @@ import EmailCode from './Pages/EmailCodeConfirmationPage/EmailCode';
 import EmailVerfication from './Pages/EmailVerificationPage/EmailVerfication';
 import ContinuePost from './Pages/ContinuePostPage/ContinuePost';
 import EditProfileDetail from './Pages/EditProfileDetails/EditProfileDetail';
+import EditPostProduct from './Pages/EditPostProduct/EditPostProduct';
 
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { faCoffee } from '@fortawesome/free-solid-svg-icons'
@@ -23,6 +24,7 @@ import EditProfileDetail from './Pages/EditProfileDetails/EditProfileDetail';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { useState } from 'react';
+
 
 
 
@@ -48,6 +50,7 @@ function App() {
         <Route path='/emailcode' element={<EmailCode/>}/>
         <Route path='/emailverification' element={<EmailVerfication/>}/>
         <Route path='/continuepost' element={<ContinuePost/>}/>
+        <Route path='/editpostproduct' element={<EditPostProduct/>}/>
       </Routes>
     </BrowserRouter>
   );
