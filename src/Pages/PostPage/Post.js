@@ -15,7 +15,7 @@ const Post = () => {
   const [isLoggedIn, setIsloggedIn] = useState(true)
   return (
     <>
-    <Navbar isLoggedIn={isLoggedIn}/>
+    <Navbar isLoggedIn={isLoggedIn} setIsloggedIn={setIsloggedIn}/>
 
     <section className="post-section">
     <PostProduct productimg={productimg} profilepic={propic} username="John Birmingham" userdate="25 December 2019" />

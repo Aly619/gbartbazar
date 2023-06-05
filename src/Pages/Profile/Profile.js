@@ -15,7 +15,7 @@ const Profile = () => {
   const [isLoggedIn, setIsloggedIn] = useState(true)
   return (
     <>
-    <Navbar isLoggedIn={isLoggedIn}/>
+    <Navbar isLoggedIn={isLoggedIn} setIsloggedIn={setIsloggedIn}/>
 
     <section className="profile-section max-width-1440">
         <ProfileDetail proheroimg={prohero} profilepicture={profilepic} profiledetailsheading="GB Art Bazaar" profiledetailspara1="Skill Set" profiledetailspara2="Working place/ company" profiledetailspara3="company link here" profiledetailspara4="Address here"  location={location} />

@@ -3,8 +3,8 @@ import '../LandingCard/LandingCard.css'
 import { Link } from 'react-router-dom'
 import ReactStars from 'react-stars'
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faStar } from '@fortawesome/free-solid-svg-icons'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faStar } from '@fortawesome/free-solid-svg-icons'
 
 const landingcard = ({ landingimg, landingheader, profilepic, username, userdate }) => {
   return (
@@ -25,7 +25,7 @@ const landingcard = ({ landingimg, landingheader, profilepic, username, userdate
           <input type="radio" name="rate" id="rate-1" />
           <FontAwesomeIcon for="rate-1" className='fastar' icon={faStar} /> */}
 
-          <ReactStars count={5} size={24} color2={'#ffd700'}/>
+          <ReactStars count={5} size={24} color1={'#ffd700'}/>
 
         </div>
 

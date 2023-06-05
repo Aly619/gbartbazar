@@ -3,10 +3,16 @@ import '../Navbar/Navbar.css'
 import searchimg from '../Navbar/search.png'
 import bellicon from '../Navbar/notification-bing.png'
 import profileicon from '../Navbar/Ellipse 381.png'
+import {HiOutlineLogout} from 'react-icons/hi'
+
 
 import { Link } from 'react-router-dom'
 
-const Navbar = ({ isLoggedIn }) => {
+const Navbar = ({ isLoggedIn, setIsloggedIn}) => {
+
+    const handleOnClick = ()=>{
+        setIsloggedIn(false);
+    }
     return (
 
         <>
@@ -28,7 +34,12 @@ const Navbar = ({ isLoggedIn }) => {
                             </div>
                         </div>
                         <img className='bell-icon' src={bellicon} alt="" />
-                        <Link to='/profile'><img className='profile-icon' src={profileicon} alt="" /></Link>
+                        <Link className='profile-links' to='/profile'><img className='profile-icon' src={profileicon} alt="" />
+                            <Link to='/' className="logout" onClick={handleOnClick}>
+                                <HiOutlineLogout className='logout-icon'/>
+                                <span>Log Out</span>
+                            </Link>
+                        </Link>
 
 
                     </div>) : (
