@@ -20,7 +20,9 @@ const PostProduct = ({ productimg, profilepic, username, userdate }) => {
                 <div className="left-post">
                     <img className='product-img' src={productimg} alt="" />
                     <div className="left-post-btn">
+                        <Link to='/editpostproduct'>
                         <button className='edit-post-btn'>Edit your post </button>
+                        </Link>
                         <button className='dlt-post-btn'>Delete your post </button>
                     </div>
                 </div>
