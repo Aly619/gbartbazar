@@ -15,14 +15,14 @@ const Post = () => {
   const [isLoggedIn, setIsloggedIn] = useState(true)
   return (
     <>
-    <Navbar isLoggedIn={isLoggedIn} setIsloggedIn={setIsloggedIn}/>
+      <Navbar isLoggedIn={isLoggedIn} setIsloggedIn={setIsloggedIn} />
 
-    <section className="post-section">
-    <PostProduct productimg={productimg} profilepic={propic} username="John Birmingham" userdate="25 December 2019" />
+      <section className="post-section">
+        <PostProduct productimg={productimg} profilepic={propic} username="John Birmingham" userdate="25 December 2019" />
 
-    </section>
+      </section>
 
-    <Footer/>
+      <Footer />
     </>
   )
 }
