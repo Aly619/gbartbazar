@@ -11,7 +11,10 @@ const landingcard = ({ landingimg, landingheader, profilepic, username, userdate
     <>
       <div className="landing-card">
         <Link to='/post'>
-          <img className='landing-card-img' src={landingimg} alt="" />
+          <div className="landing-card-image">
+            <img className='landing-card-img' src={landingimg} alt="" />
+          </div>
+
         </Link>
         <div className="review-card-stars">
           {/* <input type="radio" name="rate" id="rate-5" />
@@ -25,7 +28,7 @@ const landingcard = ({ landingimg, landingheader, profilepic, username, userdate
           <input type="radio" name="rate" id="rate-1" />
           <FontAwesomeIcon for="rate-1" className='fastar' icon={faStar} /> */}
 
-          <ReactStars count={5} size={24} color1={'#ffd700'}/>
+          <ReactStars count={5} size={24} color1={'#ffd700'} />
 
         </div>
 

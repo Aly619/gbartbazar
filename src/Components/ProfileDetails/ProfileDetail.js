@@ -3,12 +3,15 @@ import '../ProfileDetails/ProfileDetail.css'
 
 import LandingCard from '../../Components/LandingCard/LandingCard'
 
-import c1 from '../../Components/LandingCard/c1.png'
-import c2 from '../../Components/LandingCard/c2.png'
-import c3 from '../../Components/LandingCard/c3.png'
-import c4 from '../../Components/LandingCard/c4.png'
-import c5 from '../../Components/LandingCard/c5.png'
-import c6 from '../../Components/LandingCard/c6.png'
+import pro1 from '../../Components/LandingCard/profile1.png'
+import pro2 from '../../Components/LandingCard/profile2.png'
+import pro3 from '../../Components/LandingCard/profile3.png'
+import pro4 from '../../Components/LandingCard/profile4.png'
+import pro5 from '../../Components/LandingCard/profile5.png'
+import pro6 from '../../Components/LandingCard/profile6.png'
+import pro7 from '../../Components/LandingCard/profile7.png'
+import pro8 from '../../Components/LandingCard/profile8.png'
+import pro9 from '../../Components/LandingCard/profile9.png'
 import propic from '../../Components/LandingCard/propic.png'
 import { Link } from 'react-router-dom'
 
@@ -48,28 +51,30 @@ const ProfileDetail = ({ proheroimg, profilepicture, profiledetailsheading, prof
               
             </div>
             <div className="pro-right-bottom">
-              <LandingCard landingimg={c1} landingheader="How to create marketing personas that start with empathy" profilepic={propic} username="John Birmingham" userdate="25 December 2019" />
+              <LandingCard landingimg={pro5} landingheader="How to create marketing personas that start with empathy" profilepic={propic} username="John Birmingham" userdate="25 December 2019" />
               
-              <LandingCard landingimg={c2} landingheader="How to create marketing personas that start with empathy" profilepic={propic} username="John Birmingham" userdate="25 December 2019" />
+              <LandingCard landingimg={pro9} landingheader="How to create marketing personas that start with empathy" profilepic={propic} username="John Birmingham" userdate="25 December 2019" />
 
-              <LandingCard landingimg={c3} landingheader="How to create marketing personas that start with empathy" profilepic={propic} username="John Birmingham" userdate="25 December 2019" />
+              <LandingCard landingimg={pro3} landingheader="How to create marketing personas that start with empathy" profilepic={propic} username="John Birmingham" userdate="25 December 2019" />
 
-              <LandingCard landingimg={c4} landingheader="How to create marketing personas that start with empathy" profilepic={propic} username="John Birmingham" userdate="25 December 2019" />
+              <LandingCard landingimg={pro4} landingheader="How to create marketing personas that start with empathy" profilepic={propic} username="John Birmingham" userdate="25 December 2019" />
 
-              <LandingCard landingimg={c5} landingheader="How to create marketing personas that start with empathy" profilepic={propic} username="John Birmingham" userdate="25 December 2019" />
+              <LandingCard landingimg={pro1} landingheader="How to create marketing personas that start with empathy" profilepic={propic} username="John Birmingham" userdate="25 December 2019" />
 
-              <LandingCard landingimg={c6} landingheader="How to create marketing personas that start with empathy" profilepic={propic} username="John Birmingham" userdate="25 December 2019" />
-              <LandingCard landingimg={c1} landingheader="How to create marketing personas that start with empathy" profilepic={propic} username="John Birmingham" userdate="25 December 2019" />
+              <LandingCard landingimg={pro6} landingheader="How to create marketing personas that start with empathy" profilepic={propic} username="John Birmingham" userdate="25 December 2019" />
+              
+              <LandingCard landingimg={pro2} landingheader="How to create marketing personas that start with empathy" profilepic={propic} username="John Birmingham" userdate="25 December 2019" />
 
-              <LandingCard landingimg={c2} landingheader="How to create marketing personas that start with empathy" profilepic={propic} username="John Birmingham" userdate="25 December 2019" />
+              <LandingCard landingimg={pro5} landingheader="How to create marketing personas that start with empathy" profilepic={propic} username="John Birmingham" userdate="25 December 2019" />
 
-              <LandingCard landingimg={c3} landingheader="How to create marketing personas that start with empathy" profilepic={propic} username="John Birmingham" userdate="25 December 2019" />
+              <LandingCard landingimg={pro4} landingheader="How to create marketing personas that start with empathy" profilepic={propic} username="John Birmingham" userdate="25 December 2019" />
 
-              <LandingCard landingimg={c4} landingheader="How to create marketing personas that start with empathy" profilepic={propic} username="John Birmingham" userdate="25 December 2019" />
+              <LandingCard landingimg={pro8} landingheader="How to create marketing personas that start with empathy" profilepic={propic} username="John Birmingham" userdate="25 December 2019" />
 
-              <LandingCard landingimg={c5} landingheader="How to create marketing personas that start with empathy" profilepic={propic} username="John Birmingham" userdate="25 December 2019" />
+              <LandingCard landingimg={pro7} landingheader="How to create marketing personas that start with empathy" profilepic={propic} username="John Birmingham" userdate="25 December 2019" />
 
-              <LandingCard landingimg={c6} landingheader="How to create marketing personas that start with empathy" profilepic={propic} username="John Birmingham" userdate="25 December 2019" />
+
+              
             </div>
 
           </div>

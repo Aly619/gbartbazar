@@ -1,13 +1,20 @@
 .landing-card {
     background-color: #171F3E;
     width: 367px;
-    /* height: 459px; */
+    height: 465px;
     display: flex;
     flex-direction: column;
 }
-
-.landing-card-img {
+.landing-card-image{
     width: 367px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.landing-card-img {
+    
 }
 
 .landing-card .review-card-stars {

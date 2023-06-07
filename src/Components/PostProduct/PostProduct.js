@@ -71,10 +71,10 @@ const PostProduct = ({ productimg, profilepic, username, userdate }) => {
                     </div>
                     <div className="reviews">
                         <div className="review-cards">
-                            <Review reviewpara="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vehicula arcu nec libero porttitor tincidunt. Nullam massa lorem, tincidunt a placerat quis, semper at ex. Donec id molestie lacus." reviewimg={profileimage} />
-                            <Review reviewpara="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vehicula arcu nec libero porttitor tincidunt. Nullam massa lorem, tincidunt a placerat quis, semper at ex. Donec id molestie lacus." reviewimg={profileimage} />
-                            <Review reviewpara="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vehicula arcu nec libero porttitor tincidunt. Nullam massa lorem, tincidunt a placerat quis, semper at ex. Donec id molestie lacus." reviewimg={profileimage} />
-                            <Review reviewpara="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vehicula arcu nec libero porttitor tincidunt. Nullam massa lorem, tincidunt a placerat quis, semper at ex. Donec id molestie lacus." reviewimg={profileimage} />
+                            <Review reviewpara="The intricately hand-carved wooden sculpture I recently encountered is a true masterpiece of artistic excellence and craftsmanship. This remarkable piece captivates the imagination with its exquisite details and captivating beauty." reviewimg={profileimage} />
+                            <Review reviewpara="The intricately hand-carved wooden sculpture I recently encountered is a true masterpiece of artistic excellence and craftsmanship. This remarkable piece captivates the imagination with its exquisite details and captivating beauty." reviewimg={profileimage} />
+                            <Review reviewpara="The intricately hand-carved wooden sculpture I recently encountered is a true masterpiece of artistic excellence and craftsmanship. This remarkable piece captivates the imagination with its exquisite details and captivating beauty." reviewimg={profileimage} />
+                            <Review reviewpara="The intricately hand-carved wooden sculpture I recently encountered is a true masterpiece of artistic excellence and craftsmanship. This remarkable piece captivates the imagination with its exquisite details and captivating beauty." reviewimg={profileimage} />
                         </div>
 
                     </div>
