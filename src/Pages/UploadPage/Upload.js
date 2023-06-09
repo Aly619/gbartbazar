@@ -15,23 +15,80 @@ const Upload = () => {
   const [isLoggedIn, setIsloggedIn] = useState(true)
   const navigate = useNavigate()
 
+  // const [selectedImage, setSelectedImage] = useState(null);
+
+  // const handleImageChange = (event) => {
+  //   const file = event.target.files[0];
+  //   const reader = new FileReader();
+
+  //   reader.onload = () => {
+  //     setSelectedImage(reader.result);
+  //   };
+
+  //   if (file) {
+  //     reader.readAsDataURL(file);
+  //   }
+  // };
+
+
+
+
   const [selectedImage, setSelectedImage] = useState(null);
+  const [errorMessage, setErrorMessage] = useState('');
 
-  const handleImageChange = (event) => {
+  const handleImageUpload = (event) => {
     const file = event.target.files[0];
-    const reader = new FileReader();
 
-    reader.onload = () => {
-      setSelectedImage(reader.result);
-    };
+    // Check if the file is an image
+    if (file && file.type.startsWith('image/')) {
+      const reader = new FileReader();
 
-    if (file) {
+      reader.onloadend = () => {
+        const image = new Image();
+
+        image.onload = () => {
+          // Get the width and height of the image
+          const { width, height } = image;
+
+          // Define the minimum and maximum allowed sizes
+          const minWidth = 100;
+          const minHeight = 100;
+          const maxWidth = 701;
+          const maxHeight = 455;
+
+          // Perform size validation here
+          if (
+            width >= minWidth &&
+            height >= minHeight &&
+            width <= maxWidth &&
+            height <= maxHeight
+          ) {
+            // Image size is valid, set the selected image and show success message
+            setSelectedImage(reader.result);
+            setErrorMessage('');
+          } else {
+            // Image size is not valid, show an error message
+            setErrorMessage(
+              'Image size is not within the allowed limits(100-701 x 100-445). Please choose an image with appropriate dimensions.'
+            );
+            setSelectedImage(null);
+          }
+        };
+
+        image.src = reader.result;
+      };
+
       reader.readAsDataURL(file);
+    }else{
+      setErrorMessage('Please select an image')
     }
-
-
-
   };
+
+
+
+  
+
+
   return (
     <>
       <Navbar isLoggedIn={isLoggedIn} setIsloggedIn={setIsloggedIn} />
@@ -43,26 +100,28 @@ const Upload = () => {
         <div className="upload-content">
           <input className='upload-content-title' type="text" placeholder='Enter your title' />
           <div className="upload-content-image-section " id='img-box'>
-            <input className='upload-content-image' type="file" accept='image/*' name='image' id='file' onChange={handleImageChange} />
+            <input className='upload-content-image' type="file" accept='image/*' name='image' id='file' onChange={handleImageUpload} />
             <label htmlFor="file">
               <div>
                 {selectedImage ? (
                   <div className='upload-img'>
-                    <img src={selectedImage} alt="Preview" />
+                    {/* <img src={selectedImage} alt="Preview" /> */}
+                    {selectedImage && <img src={selectedImage} alt="Selected" />}
                   </div>
                 ) : (
-                  <img src={uploadimg} alt="Preview" />
+                  // <img src={uploadimg} alt="Preview" />
+                  <>
+                  <div className="up-img">
+                    <img src={uploadimg} alt="" />
+                    <span className='drag-drop'>Drag & Drop Image</span>
+                  </div>
+                  {errorMessage && <div className="error-message">{errorMessage}</div>}
+                  </>
+                  
+                  
                 )}
               </div>
             </label>
-
-            {/* {selectedImage && (
-              <div className='upload-img'>
-                <img src={selectedImage} alt="Preview" />
-              </div>
-            )} */}
-            {/* <img src={uploadimg} alt="" /> */}
-            {/* <label className='upload-label' htmlFor="file">Upload</label> */}
 
           </div>
           <textarea name="" id="" placeholder='Type your desicribtion here ( up to 200 words)' cols="30" rows="1"></textarea>
