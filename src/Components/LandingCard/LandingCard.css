@@ -1,27 +1,76 @@
 .landing-card {
     background-color: #171F3E;
     width: 367px;
-    height: 465px;
+    height: 459px;
     display: flex;
     flex-direction: column;
 }
-.landing-card-image{
-    width: 367px;
-    height: 300px;
+
+.landing-card-top {
+    /* width: 367px;
+    height: 300px; */
+    position: relative;
+    top: 10px;
+    right: 0px;
+    left: 0px;
+    bottom: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-
-}
-.landing-card-img {
-    
+    /* border: 1px solid red; */
 }
 
-.landing-card .review-card-stars {
+.card-edit-del {
+    position: absolute;
+    left: 10px;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: all .5s ease;
+    opacity: 0;
+}
+
+.landing-card:hover .card-edit-del{
+    opacity: 1;
+}
+
+.edit-del-circle {
+    width: 30px;
+    height: 30px;
+    background: #2D7DD7;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.edit-del-circle .landing-card-icon{
+    font-size: 16px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.landing-card-image {
+    width: 367px;
+    height: 305px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+
+}
+
+/* .landing-card-image img {
+    width: 100%;
+    height: 100%;
+} */
+
+/* .landing-card .review-card-stars {
     margin-left: 20px;
     margin-top: 10px;
     cursor: pointer;
-}
+} */
 
 .landing-header {
     width: 327px;
@@ -34,6 +83,7 @@
     font-size: 22px;
     line-height: 140%;
     color: #FFFFFF;
+    margin-top: 30px;
 }
 
 .profile-link {
@@ -41,7 +91,7 @@
     align-items: center;
     margin-top: 10px;
     margin-left: 20px;
-    margin-bottom: 11px;
+    /* margin-bottom: 11px; */
     background-color: #171F3E;
 
 }
@@ -79,13 +129,14 @@
     line-height: 145.8%;
     color: #697694;
 }
-.reviewbtn{
+
+/* .reviewbtn{
     display: flex;
     justify-content: right;
     margin-right: 12px;
-}
+} */
 
-.reviewbtn button{
+/* .reviewbtn button{
     width: 111px;
     height: 28px;
     margin-bottom: 8px;
@@ -100,4 +151,4 @@
     line-height: 17px;
     color: #FFFFFF;
     cursor: pointer;
-}
+} */
