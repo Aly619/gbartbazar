@@ -2,7 +2,7 @@ import React from 'react'
 import '../Navbar/Navbar.css'
 import searchimg from '../Navbar/search.png'
 import bellicon from '../Navbar/notification-bing.png'
-import profileicon from '../Navbar/Ellipse 381.png'
+import profileicon from '../Navbar/profileimage.png'
 import {HiOutlineLogout} from 'react-icons/hi'
 
 

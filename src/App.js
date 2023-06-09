@@ -15,6 +15,7 @@ import EmailCode from './Pages/EmailCodeConfirmationPage/EmailCode';
 import EmailVerfication from './Pages/EmailVerificationPage/EmailVerfication';
 import ContinuePost from './Pages/ContinuePostPage/ContinuePost';
 import EditProfileDetail from './Pages/EditProfileDetails/EditProfileDetail';
+import EditPostProduct from './Pages/EditPostProduct/EditPostProduct';
 
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { faCoffee } from '@fortawesome/free-solid-svg-icons'
@@ -27,6 +28,7 @@ import { useState } from 'react';
 
 
 
+
 function App() {
 
   const [isLoggedIn, setIsloggedIn] = useState(false)
@@ -35,8 +37,8 @@ function App() {
       <Routes>
         <Route path='/' element={<Home isLoggedIn={isLoggedIn} setIsloggedIn={setIsloggedIn}/>} />
         <Route path='/landingpage' element={<LandingPage />} />
-        <Route path='/post' element={<Post/>} />
         <Route path='/profile' element={<Profile/>} />
+        <Route path='/post' element={<Post/>} />
         <Route path='/editprofiledetail' element={<EditProfileDetail/>} />
         <Route path='/upload' element={<Upload/>} />
         <Route path='/signup' element={<SignIn isLoggedIn={isLoggedIn} setIsloggedIn={setIsloggedIn}/>}/>
@@ -48,7 +50,7 @@ function App() {
         <Route path='/emailcode' element={<EmailCode/>}/>
         <Route path='/emailverification' element={<EmailVerfication/>}/>
         <Route path='/continuepost' element={<ContinuePost/>}/>
-        <Route path='/upload' element={<Upload/>}/>
+        <Route path='/editpostproduct' element={<EditPostProduct/>}/>
       </Routes>
     </BrowserRouter>
   );

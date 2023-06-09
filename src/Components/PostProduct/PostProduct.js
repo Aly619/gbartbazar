@@ -10,6 +10,7 @@ import Review from '../../Components/Reviews/Review'
 
 import profileimage from '../../Components/PostProduct/profileimage.png'
 import ReactStars from 'react-stars'
+import { Link } from 'react-router-dom'
 
 
 const PostProduct = ({ productimg, profilepic, username, userdate }) => {
@@ -20,7 +21,9 @@ const PostProduct = ({ productimg, profilepic, username, userdate }) => {
                 <div className="left-post">
                     <img className='product-img' src={productimg} alt="" />
                     <div className="left-post-btn">
+                        <Link to='/editpostproduct'>
                         <button className='edit-post-btn'>Edit your post </button>
+                        </Link>
                         <button className='dlt-post-btn'>Delete your post </button>
                     </div>
                 </div>
@@ -68,10 +71,10 @@ const PostProduct = ({ productimg, profilepic, username, userdate }) => {
                     </div>
                     <div className="reviews">
                         <div className="review-cards">
-                            <Review reviewpara="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vehicula arcu nec libero porttitor tincidunt. Nullam massa lorem, tincidunt a placerat quis, semper at ex. Donec id molestie lacus." reviewimg={profileimage} />
-                            <Review reviewpara="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vehicula arcu nec libero porttitor tincidunt. Nullam massa lorem, tincidunt a placerat quis, semper at ex. Donec id molestie lacus." reviewimg={profileimage} />
-                            <Review reviewpara="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vehicula arcu nec libero porttitor tincidunt. Nullam massa lorem, tincidunt a placerat quis, semper at ex. Donec id molestie lacus." reviewimg={profileimage} />
-                            <Review reviewpara="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vehicula arcu nec libero porttitor tincidunt. Nullam massa lorem, tincidunt a placerat quis, semper at ex. Donec id molestie lacus." reviewimg={profileimage} />
+                            <Review reviewpara="The intricately hand-carved wooden sculpture I recently encountered is a true masterpiece of artistic excellence and craftsmanship. This remarkable piece captivates the imagination with its exquisite details and captivating beauty." reviewimg={profileimage} />
+                            <Review reviewpara="The intricately hand-carved wooden sculpture I recently encountered is a true masterpiece of artistic excellence and craftsmanship. This remarkable piece captivates the imagination with its exquisite details and captivating beauty." reviewimg={profileimage} />
+                            <Review reviewpara="The intricately hand-carved wooden sculpture I recently encountered is a true masterpiece of artistic excellence and craftsmanship. This remarkable piece captivates the imagination with its exquisite details and captivating beauty." reviewimg={profileimage} />
+                            <Review reviewpara="The intricately hand-carved wooden sculpture I recently encountered is a true masterpiece of artistic excellence and craftsmanship. This remarkable piece captivates the imagination with its exquisite details and captivating beauty." reviewimg={profileimage} />
                         </div>
 
                     </div>

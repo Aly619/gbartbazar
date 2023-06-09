@@ -9,6 +9,22 @@ import c3 from '../../Components/LandingCard/c3.png'
 import c4 from '../../Components/LandingCard/c4.png'
 import c5 from '../../Components/LandingCard/c5.png'
 import c6 from '../../Components/LandingCard/c6.png'
+import ha1 from '../../Components/LandingCard/ha1.png'
+import ha2 from '../../Components/LandingCard/ha2.png'
+import ha3 from '../../Components/LandingCard/ha3.png'
+import ha4 from '../../Components/LandingCard/ha4.png'
+import ha5 from '../../Components/LandingCard/ha5.png'
+import ha6 from '../../Components/LandingCard/ha6.png'
+import ha7 from '../../Components/LandingCard/ha7.png'
+import ha8 from '../../Components/LandingCard/ha8.png'
+import ha9 from '../../Components/LandingCard/ha9.png'
+import hp1 from '../../Components/LandingCard/hp1.png'
+import hp2 from '../../Components/LandingCard/hp2.png'
+import hp3 from '../../Components/LandingCard/hp3.png'
+import hp4 from '../../Components/LandingCard/hp4.png'
+import hp5 from '../../Components/LandingCard/hp5.png'
+import hp6 from '../../Components/LandingCard/hp6.png'
+
 import propic from '../../Components/LandingCard/propic.png'
 import handmadehero from '../../Images/handmadehero.png'
 import historicalhero from '../../Images/historicalheroimg.png'
@@ -38,7 +54,7 @@ const Home = ({ isLoggedIn, setIsloggedIn }) => {
                         <p className="landing-hero-para">GB ArtBazaar is the leading destination to find & showcase creative work and home to the world's best design professionals.</p>
 
                         <div className="landing-hero-btn">
-                            <Link to={'/signup'}><button className="get-btn">Get Started</button></Link>                    
+                            <Link to={'/signup'}><button className="get-btn">Get Started</button></Link>
                             <img className='demo-btn' src={demo} alt="" />
                         </div>
 
@@ -117,12 +133,24 @@ const Home = ({ isLoggedIn, setIsloggedIn }) => {
                         <p className="handmade-para">The word Artbazaar literally translates to ‘image’ and we believe every piece of art is a reflection of the artist’s mind.</p>
                         <img src={handmadehero} alt="" className="handmade-heroimg" />
                         <div className="handmade-cards">
-                            <LandingCard landingimg={c1} landingheader="How to create desigining personas that start with empathy" profilepic={propic} username="John Birmingham" userdate="25 December 2019" />
-                            <LandingCard landingimg={c1} landingheader="How to create desigining personas that start with empathy" profilepic={propic} username="John Birmingham" userdate="25 December 2019" />
-                            <LandingCard landingimg={c1} landingheader="How to create desigining personas that start with empathy" profilepic={propic} username="John Birmingham" userdate="25 December 2019" />
-                            <LandingCard landingimg={c1} landingheader="How to create desigining personas that start with empathy" profilepic={propic} username="John Birmingham" userdate="25 December 2019" />
-                            <LandingCard landingimg={c1} landingheader="How to create desigining personas that start with empathy" profilepic={propic} username="John Birmingham" userdate="25 December 2019" />
-                            <LandingCard landingimg={c1} landingheader="How to create desigining personas that start with empathy" profilepic={propic} username="John Birmingham" userdate="25 December 2019" />
+
+                            <LandingCard landingimg={ha1} landingheader="This carry our cultural significance and reflect our tradition" profilepic={propic} username="John Birmingham" userdate="25 December 2019" />
+
+                            <LandingCard landingimg={ha2} landingheader="Our art highlight beauty and natural materials" profilepic={propic} username="John Birmingham" userdate="25 December 2019" />
+
+                            <LandingCard landingimg={ha3} landingheader="This reflect technical skills, creativity and passion" profilepic={propic} username="John Birmingham" userdate="25 December 2019" />
+
+                            <LandingCard landingimg={ha4} landingheader="Our art is unique and convey a story" profilepic={propic} username="John Birmingham" userdate="25 December 2019" />
+
+                            <LandingCard landingimg={ha5} landingheader="We preserve our culture and tradition" profilepic={propic} username="John Birmingham" userdate="25 December 2019" />
+
+                            <LandingCard landingimg={ha6} landingheader="Our art is unique and convey a story" profilepic={propic} username="John Birmingham" userdate="25 December 2019" />
+
+                            <LandingCard landingimg={ha7} landingheader="This reflect technical skills, creativity and passion" profilepic={propic} username="John Birmingham" userdate="25 December 2019" />
+
+                            <LandingCard landingimg={ha8} landingheader="This carry our cultural significance and reflect our tradition" profilepic={propic} username="John Birmingham" userdate="25 December 2019" />
+
+                            <LandingCard landingimg={ha9} landingheader="We preserve our culture and tradition" profilepic={propic} username="John Birmingham" userdate="25 December 2019" />
 
                         </div>
                     </section>
@@ -134,32 +162,39 @@ const Home = ({ isLoggedIn, setIsloggedIn }) => {
                         <p className="historical-para">The word Artbazaar literally translates to ‘image’ and we believe every piece of art is a reflection of the artist’s mind.</p>
                         <img src={historicalhero} alt="" className="historical-heroimg" />
                         <div className="historical-cards">
-                            <LandingCard landingimg={c1} landingheader="How to create desigining personas that start with empathy" profilepic={propic} username="John Birmingham" userdate="25 December 2019" />
-                            <LandingCard landingimg={c1} landingheader="How to create desigining personas that start with empathy" profilepic={propic} username="John Birmingham" userdate="25 December 2019" />
-                            <LandingCard landingimg={c1} landingheader="How to create desigining personas that start with empathy" profilepic={propic} username="John Birmingham" userdate="25 December 2019" />
-                            <LandingCard landingimg={c1} landingheader="How to create desigining personas that start with empathy" profilepic={propic} username="John Birmingham" userdate="25 December 2019" />
-                            <LandingCard landingimg={c1} landingheader="How to create desigining personas that start with empathy" profilepic={propic} username="John Birmingham" userdate="25 December 2019" />
-                            <LandingCard landingimg={c1} landingheader="How to create desigining personas that start with empathy" profilepic={propic} username="John Birmingham" userdate="25 December 2019" />
+
+                            <LandingCard landingimg={hp1} landingheader="Our art highlight beauty and natural materials" profilepic={propic} username="John Birmingham" userdate="25 December 2019" />
+
+                            <LandingCard landingimg={hp2} landingheader="This reflect technical skills, creativity and passion" profilepic={propic} username="John Birmingham" userdate="25 December 2019" />
+
+                            <LandingCard landingimg={hp3} landingheader="Our art is unique and convey a story" profilepic={propic} username="John Birmingham" userdate="25 December 2019" />
+
+                            <LandingCard landingimg={hp4} landingheader="We preserve our culture and tradition" profilepic={propic} username="John Birmingham" userdate="25 December 2019" />
+
+                            <LandingCard landingimg={hp5} landingheader="Our art is unique and convey a story" profilepic={propic} username="John Birmingham" userdate="25 December 2019" />
+
+                            <LandingCard landingimg={hp6 } landingheader="This reflect technical skills, creativity and passion" profilepic={propic} username="John Birmingham" userdate="25 December 2019" />
+
 
                         </div>
                     </section>
 
                     {isLoggedIn ? (
-                       
-                       <></>
-                   
 
-                ) : (
-                    <div className="card-button">
-
-                    <Link to='/signup'><button className="card-signup">Sign up to Continue</button></Link>
-                    <Link to='/login'><button className="card-signin">Sign In</button></Link>
+                        <></>
 
 
-                </div>
-                   
+                    ) : (
+                        <div className="card-button">
 
-                )}
+                            <Link to='/signup'><button className="card-signup">Sign up to Continue</button></Link>
+                            <Link to='/login'><button className="card-signin">Sign In</button></Link>
+
+
+                        </div>
+
+
+                    )}
 
                 </section>
 
