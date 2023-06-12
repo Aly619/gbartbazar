@@ -79,14 +79,14 @@ const Upload = () => {
       };
 
       reader.readAsDataURL(file);
-    }else{
+    } else {
       setErrorMessage('Please select an image')
     }
   };
 
 
 
-  
+
 
 
   return (
@@ -111,14 +111,16 @@ const Upload = () => {
                 ) : (
                   // <img src={uploadimg} alt="Preview" />
                   <>
-                  <div className="up-img">
-                    <img src={uploadimg} alt="" />
-                    <span className='drag-drop'>Drag & Drop Image</span>
-                  </div>
-                  {errorMessage && <div className="error-message">{errorMessage}</div>}
+                    <div className='upload-photo'>
+                      <div className="up-img">
+                        <img src={uploadimg} alt="" />
+                        <span className='drag-drop'>Drag & Drop Image</span>
+                      </div>
+                    </div>
+                    {errorMessage && <div className="error-message">{errorMessage}</div>}
                   </>
-                  
-                  
+
+
                 )}
               </div>
             </label>
